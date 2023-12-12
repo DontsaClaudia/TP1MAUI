@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestMauiApp1.APropos"
+             Title="APropos">
+    <VerticalStackLayout Spacing="10" Margin="10">
+        <Image 
+            Source="logo3il.jpg"
+            SemanticProperties.Description="Cette application est une production 3iL"
+            HeightRequest="64" HorizontalOptions="CenterAndExpand"/>
+        
+        <Label FontSize="22" FontAttributes="Bold" Text="App 3il" VerticalOptions="End" TextColor="{StaticResource Secondary}" />
+        <Label 
+            FontSize="22" Text="v1.0" VerticalOptions="End" TextColor="{StaticResource Secondary}"/>
+        <Label Text="Application XAML/C# ecrite en .NET MAUI." TextColor="{StaticResource Primary}"/>
+
+        <Button Text="En savoir plus sur 3iL" Clicked="Apropos_Clicked"/>
+
+
+    </VerticalStackLayout>
+</ContentPage>
